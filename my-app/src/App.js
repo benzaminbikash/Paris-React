@@ -8,6 +8,7 @@ const url = "https://course-api.com/react-tours-project";
 const App = () => {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState([])
+    //remove value
     const removeItem = (id) => {
         const newData = data.filter((data) => data.id !== id)
         setData(newData)
@@ -17,7 +18,6 @@ const App = () => {
         try {
             const response = await fetch(url)
             const newresponse = await response.json();
-
             setData(newresponse)
             setLoading(false)
         } catch (error) {
@@ -49,5 +49,4 @@ const App = () => {
         </div>
     )
 }
-
 export default App
