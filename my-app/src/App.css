@@ -66,4 +66,7 @@ img{
         text-align: center;
         width: 70%;
     }
+     .priceItems>h5{
+        font-size: 18px;
+    }
 }
